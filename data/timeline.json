@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "73294e3a0629",
+    "children" : [ {
+      "name" : "7-MainThread",
+      "children" : [ {
+        "name" : "Post and like",
+        "uid" : "5a9cbcccd1963a68",
+        "parentUid" : "0559cfb87e40aaf220d2a91aeb629e54",
+        "status" : "broken",
+        "time" : {
+          "start" : 1751459392073,
+          "stop" : 1751459422884,
+          "duration" : 30811
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0559cfb87e40aaf220d2a91aeb629e54"
+    } ],
+    "uid" : "6db22b7bb68ee072dd48fec4156a8d0c"
+  } ]
+}
