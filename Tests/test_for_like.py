@@ -1,10 +1,6 @@
 import pytest
 import allure
-
-from Config.links import links
 from Base.base_test import BaseTest
-from Base.base_page import BasePage
-from playwright.async_api import async_playwright, expect
 
 @allure.feature('Buzz page functionality')
 class TestMain(BaseTest):
