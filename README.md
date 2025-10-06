@@ -1,36 +1,31 @@
-# Auto Test by Playwright (Python)
+Welcome to the Auto-Test project, built using the Playwright testing framework(Async mode).
 
-Automated UI testing framework using Playwright for Python.
+This repository includes full E2E test for opensource-demo.orangehrmlive.com, featuring:
 
-## Setup
+Allure Reports for detailed and visually appealing test result summaries.
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/DeathGun221/Auto-test-by-Playwright.git
-   cd Auto-test-by-Playwright
+A Dockerfile and docker-compose.yml to easily set up and run tests in isolated, consistent environments.
 
+Fully configured CI/CD pipelines that automatically execute tests to ensure continuous quality and reliability.
+
+
+Installation and Setup
+
+1. Clone the Repository
    
-Create virtual environment (optional but recommended):
+git clone https://github.com/OleksandrSava/Playwright_E2E_Test.git
+cd Playwright_E2E_Test
 
-python -m venv venv
-source venv/bin/activate    # Linux/Mac
-venv\Scripts\activate       # Windows
-
-
-Install dependencies:
+2. Install Python Dependencies
 
 pip install -r requirements.txt
 
+4. Running Tests Locally
+-Simply run:
 
-Install Playwright browsers:
-
-playwright install
-
-
-Run tests
 pytest
 
+-Running Tests Using Docker:
 
-Or directly with Playwright test runner:
+docker-compose up --build
 
-playwright test
