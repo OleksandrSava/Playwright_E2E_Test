@@ -1,18 +1,61 @@
-
+# ----------------------------
+# Python
+# ----------------------------
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
+*.pyc
 
+# ----------------------------
+# Virtual environment
+# ----------------------------
+venv/
+env/
+.env
+.env.*
 
+# ----------------------------
+# pytest
+# ----------------------------
 .pytest_cache/
+*.cover
+.coverage
+htmlcov/
+.cache/
 
+# ----------------------------
+# Playwright
+# ----------------------------
+test-results/
+screenshots/
+videos/
+trace/
 
+# ----------------------------
+# Allure reports
+# ----------------------------
+allure-results/
+allure-report/
+
+# ----------------------------
+# IDEs and editors
+# ----------------------------
+# PyCharm
 .idea/
 *.iml
 
+# VSCode
+.vscode/
 
-.env
+# ----------------------------
+# Logs
+# ----------------------------
+*.log
 
-
-report/
-allure-results/
-allure-report/
+# ----------------------------
+# System files
+# ----------------------------
+.DS_Store
+Thumbs.db
+*.swp
