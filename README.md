@@ -1,4 +1,4 @@
-# Playwright E2E Tests
+# Playwright E2E Test
 
 Compact Playwright (Python, async) end-to-end test suite for opensource-demo.orangehrmlive.com with Allure reporting and Docker support.
 
@@ -32,6 +32,3 @@ Project layout
 Notes
 - Designed for local, Docker, or CI execution. Allure and JUnit artifacts supported.
 - Add LICENSE and CONTRIBUTING.md if you want to present the repo for job applications.
-
-License
-- MIT by default (add LICENSE file to confirm).
