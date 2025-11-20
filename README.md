@@ -1,31 +1,37 @@
-Welcome to the Auto-Test project, built using the Playwright testing framework(Async mode).
+# Playwright E2E Tests
 
-This repository includes full E2E test for opensource-demo.orangehrmlive.com, featuring:
+Compact Playwright (Python, async) end-to-end test suite for opensource-demo.orangehrmlive.com with Allure reporting and Docker support.
 
-Allure Reports for detailed and visually appealing test result summaries.
+Quick start
+1. git clone https://github.com/OleksandrSava/Playwright_E2E_Test.git
+2. cd Playwright_E2E_Test
+3. python -m venv .venv && source .venv/bin/activate
+4. pip install -r requirements.txt
+5. Run tests: pytest -q
 
-A Dockerfile and docker-compose.yml to easily set up and run tests in isolated, consistent environments.
+Run with Docker
+- docker-compose up --build
 
-Fully configured CI/CD pipelines that automatically execute tests to ensure continuous quality and reliability.
+Common commands
+- Run all tests: pytest
+- Run folder/file: pytest tests/
+- Run single test: pytest tests/test_example.py::test_login
+- Allure report: pytest --alluredir=reports/allure
 
+Key env vars
+- BASE_URL — application URL (default: opensource-demo.orangehrmlive.com)
+- PLAYWRIGHT_HEADLESS — true|false
+- BROWSER — chromium|firefox|webkit
+- CI — set in CI environments
 
-Installation and Setup
+Project layout
+- tests/ — test cases
+- pages/ — Page Objects
+- fixtures/, utils/, reports/, requirements.txt, conftest.py, docker-compose.yml
 
-1. Clone the Repository
-   
-git clone https://github.com/OleksandrSava/Playwright_E2E_Test.git
-cd Playwright_E2E_Test
+Notes
+- Designed for local, Docker, or CI execution. Allure and JUnit artifacts supported.
+- Add LICENSE and CONTRIBUTING.md if you want to present the repo for job applications.
 
-2. Install Python Dependencies
-
-pip install -r requirements.txt
-
-4. Running Tests Locally
--Simply run:
-
-pytest
-
--Running Tests Using Docker:
-
-docker-compose up --build
-
+License
+- MIT by default (add LICENSE file to confirm).
