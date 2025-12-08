@@ -1,5 +1,3 @@
-version: '3.7'
-
 services:
   regression:
     build:
@@ -7,8 +5,9 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/usr/workspace
-    command: /bin/sh -c "ls -la && pytest -sv --alluredir=allure-results -r a --tb=long"
+    shm_size: "1gb"
     working_dir: /usr/workspace
     environment:
       - LOGIN=${LOGIN}
       - PASSWORD=${PASSWORD}
+    command: ["pytest", "-sv", "--alluredir=allure-results"]
