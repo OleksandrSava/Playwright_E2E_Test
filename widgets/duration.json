@@ -1,11 +1,1 @@
-[ {
-  "uid" : "5a9cbcccd1963a68",
-  "name" : "Post and like",
-  "time" : {
-    "start" : 1751459392073,
-    "stop" : 1751459422884,
-    "duration" : 30811
-  },
-  "status" : "broken",
-  "severity" : "critical"
-} ]
+[{"uid":"5b1b7dbb63aecd7b","name":"Post and like","time":{"start":1765212423212,"stop":1765212427389,"duration":4177},"status":"passed","severity":"critical"}]
