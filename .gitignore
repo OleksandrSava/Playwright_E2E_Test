@@ -1,59 +1,34 @@
-# ----------------------------
-# Python
-# --------------------------
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
-# ----------------------------
-# Virtual environment
-# ----------------------------
+*.swp
+*.swo
+*.log
+
+.venv/
 venv/
 env/
-.env
-.env.*
 
-# ----------------------------
-# pytest
-# ----------------------------
-.pytest_cache/
-*.cover
-.coverage
-htmlcov/
 .cache/
+.pytest_cache/
 
-# ----------------------------
-# Playwright
-# ----------------------------
-test-results/
-screenshots/
-videos/
-trace/
-
-# ----------------------------
-# Allure reports
-# ----------------------------
 allure-results/
 allure-report/
 
-# ----------------------------
-# IDEs and editors
-# ----------------------------
-# PyCharm
+htmlcov/
+*.coverage
+*.cover
+*.cov
+*.gcov
+
 .idea/
+.vscode/
 *.iml
 
-# VSCode
-.vscode/
+*.pid
+*.seed
+*.pid.lock
 
-# ----------------------------
-# Logs
-# ----------------------------
-*.log
-
-# ----------------------------
-# System files
-# ----------------------------
 .DS_Store
 Thumbs.db
-*.swp
