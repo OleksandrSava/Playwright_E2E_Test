@@ -9,7 +9,9 @@ __pycache__/
 .venv/
 venv/
 env/
-
+.env
+.gitignore
+pytest.ini
 .cache/
 .pytest_cache/
 
